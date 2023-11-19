@@ -1,0 +1,52 @@
+#########################################################################
+#  _____  _                       _                             _       #
+# |  __ \(_)                     | |                           | |      #
+# | |  | |_ ___  ___ ___  _ __ __| |         __ _  __ _ _ __ __| | __ _ #
+# | |  | | / __|/ __/ _ \| '__/ _` |        / _` |/ _` | '__/ _` |/ _` |#
+# | |__| | \__ \ (_| (_) | | | (_| |       | (_| | (_| | | | (_| | (_| |#
+# |_____/|_|___/\___\___/|_|  \__,_|        \__,_|\__,_|_|  \__,_|\__,_|#
+#                                       ______                          #
+#                                      |______|                         #
+#########################################################################
+bot:
+  # Discord botunuzun tokeni
+  token: 'MTE3MzU3OTEyNzQ1OTE3MjM4Mw.GO6kyV.sRmf4sGuLiHEAwJ4rCXNgkx2beIM5HfBizG-n4'
+  # Discord botunuzun application idsi
+  id: '1173579127459172383'
+  # Discord botunun durum kısmı
+  status:
+    # Discord botunun açıklma kısmındaki event; playing = Oynuyor, streaming = Yayında, listening = Dinliyor, watching = İzliyor, competing = Yarışmada yarışıyor.
+    activity: 'streaming'
+    # Discord botunun açıklama yazısı; %onDutyPolice% yazarak aktif mesaideki memurların sayısını gösterebilirsiniz.
+    text: '%onDutyPolice% kişi şuanda mesaide!'
+    # Discord botunun açıklma kısmındaki event streaming olarak ayarlanırsa aşağıdaki twitch kısmını doldurunuz.
+    twitch: 'https://www.twitch.tv/crosiderr'
+    # Discord botunun aktiflik kısmı; online = Aktif, idle = Boşta, dnd = Rahatsız Etmeyin, invisible = Çevrimdışı.
+    status: 'idle'
+guild:
+  # Discord sunucunuzun idsi
+  id: '1143997252625518755'
+settings:
+  departmentName: 'LSPD'
+  departmentLogo: 'https://static.wikia.nocookie.net/nopixel/images/4/43/LSPD3.png'
+  departmentBanner: 'https://forum.cfx.re/uploads/default/original/4X/f/7/e/f7e79012c44e49af0a8f38dbb0d70dc324f3f9a7.png'
+  departmentColor: '#0000ff'
+  roles:
+    # Rütbe rollerinin idleri
+    officers: ['1175522083065839656', '1175522192340025354']
+  channels:
+    # Log kanalının idsi
+    log: '1175522310472609902'
+  # Mesaj içerikelrinde kulanılan emojiler, 📋 şeklinde, :emojiAdı: şeklinde veya idsiyle kullanılabilir.
+  emojis:
+    department: '👮'
+    on: '🟩'
+    off: '🟥'
+    warning: '⚠️'
+    info: '📋'
+    clock: '⏲️'
+commands:
+    # Aktif mesaideki üyeleri gösteren komut
+    activeDuty:
+      # Bu komutu kullanabilmek için gereken rol
+      requiredRole: '1175494508385935403'
